@@ -4,7 +4,7 @@
 # documentation.
 
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: 泽知的博客
+name: Jektll
 
 on:
   # Runs on pushes targeting the default branch
@@ -40,9 +40,9 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
-        id: 泽知的博客
+        id: page
         uses: actions/configure-pages@v3
-      - name: 平白无其的一个
+      - name: page
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
